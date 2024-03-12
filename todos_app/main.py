@@ -8,7 +8,7 @@ class Todos(SQLModel , table=True):
     content : str
 class Insert_Todos(BaseModel):
    content : str
-db_url : str = 'postgresql://developer-hammad-rehman:8bprnOJV0dxm@ep-quiet-lab-a590cace.us-east-2.aws.neon.tech/todoapp?sslmode=require'
+db_url : str = 'DATA_BASE URL'
 engine =  create_engine(db_url , echo=True)
 def create_table():
     SQLModel.metadata.create_all(engine)
